@@ -1,16 +1,60 @@
 #/bin/bash
-
-
-#Configure PostgreSQL database
-sudo -u postgres bash
-createuser -DRS gvm && createdb -O gvm gvmd
-psql gvmd
-
-
-#Setup correct permissions and create database extensions.
-create role dba with superuser noinherit;
-grant dba to gvm;
-create extension "uuid-ossp";
-create extension "pgcrypto";
-exit
-
+sudo apt-get update 
+sudo apt-get -y upgrade 
+sudo apt-get install -y build-essential 
+sudo apt-get install -y cmake 
+sudo apt-get install -y pkg-config 
+sudo apt-get install -y gcc-mingw-w64 
+sudo apt-get install -y gnutls-bin 
+sudo apt-get install -y libgnutls28-dev 
+sudo apt-get install -y libxml2-dev 
+sudo apt-get install -y libssl-dev 
+sudo apt-get install -y libunistring-dev 
+sudo apt-get install -y libldap2-dev 
+sudo apt-get install -y libgcrypt-dev 
+sudo apt-get install -y libpcap-dev 
+sudo apt-get install -y libgpgme-dev 
+sudo apt-get install -y libradcli-dev 
+sudo apt-get install -y libglib2.0-dev
+sudo apt-get install -y libksba-dev 
+sudo apt-get install -y libical-dev 
+sudo apt-get install -y libpq-dev 
+sudo apt-get install -y libopenvas-dev 
+sudo apt-get install -y libpopt-dev 
+sudo apt-get install -y libnet1-dev 
+sudo apt-get install -y libmicrohttpd-dev 
+sudo apt-get install -y redis-server 
+sudo apt-get install -y libhiredis-dev 
+sudo apt-get install -y doxygen 
+sudo apt-get install -y xsltproc 
+sudo apt-get install -y uuid-dev 
+sudo apt-get install -y graphviz 
+sudo apt-get install -y bison 
+sudo apt-get install -y postgresql 
+sudo apt-get install -y postgresql-contrib 
+sudo apt-get install -y postgresql-server-dev-all
+sudo apt-get install -y heimdal-dev 
+sudo apt-get install -y xmltoman 
+sudo apt-get install -y nmap 
+sudo apt-get install -y npm 
+sudo apt-get install -y nodejs 
+sudo apt-get install -y virtualenv 
+sudo apt-get install -y gnupg 
+sudo apt-get install -y rsync 
+sudo apt-get install -y yarnpkg 
+sudo apt-get install -y python3-paramiko 
+sudo apt-get install -y python3-lxml 
+sudo apt-get install -y python3-defusedxml 
+sudo apt-get install -y python3-pip 
+sudo apt-get install -y python3-psutil 
+sudo apt-get install -y python3-setuptools 
+sudo apt-get install -y python3-packaging 
+sudo apt-get install -y python3-wrapt 
+sudo apt-get install -y python3-cffi 
+sudo apt-get install -y python3-redis 
+sudo apt-get install -y xmlstarlet 
+sudo apt-get install -y texlive-fonts-recommended 
+sudo apt-get install -y texlive-latex-extra 
+sudo apt-get install -y perl-base 
+sudo apt-get install -y xml-twig-tools
+sudo apt-get update
