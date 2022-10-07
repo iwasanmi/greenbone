@@ -280,13 +280,13 @@ sudo cp -r /tmp/openvas-gnupg/* $OPENVAS_GNUPG_HOME/ && \
 sudo chown -R gvm:gvm $OPENVAS_GNUPG_HOME
 
 # visudo
-sudo visudo
+# sudo visudo
 
 # Allow members of group sudo to execute any command
-%sudo   ALL=(ALL:ALL) ALL
+# %sudo   ALL=(ALL:ALL) ALL
 
 # allow users of the gvm group run openvas
-%gvm ALL = NOPASSWD: /usr/local/sbin/openvas
+# %gvm ALL = NOPASSWD: /usr/local/sbin/openvas
 
 # Start PostgreSQL
 sudo systemctl start postgresql@14-main.service
